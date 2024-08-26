@@ -11,25 +11,23 @@ program that takes input for an individual's income, age, and the number of chil
 and calculates their income tax.
 
 
-X, Y, Z = map(int,input("income,age,children: ").split())
-if Y>65 and Z==0:
-     X = X-500
-     if X<=10001:
-         print("5%tax")
-     elif 10001<x<=50000:
-         print("10% tax")
-     elif 50000<x<=100000:
-         print("20% tax")
+income,age,kids = map(int,input("income,age,kids: ").split())
+if age>65 and kids==0:
+     if income<=10000:
+         print((5/100)*income)-500)
+     elif 10001<income<=50000:
+         print((10/100)*income)-500)
+     elif 50001<income<=100000:
+         print((20/100)*income)-500)
      else:
-         print("30% tax")
+         print((30/100)*income)-500)
 
-if Z>0:
-    X = X+(200*Z)
-    if X<=10001:
-         print("5%tax")
-    elif 10001<x<=50000:
-         print("10% tax")
-    elif 50000<x<=100000:
-         print("20% tax")
+if kids>0:
+    if income<=10001:
+         print((5/100)*income)-(200*kids))
+    elif 10001<income<=50000:
+         print((10/100)*income)-(200*kids))
+    elif 50000<income<=100000:
+         print((20/100)*income)-(200*kids))
     else:
-         print("30% tax")
+         print((30/100)*income)-(200*kids))

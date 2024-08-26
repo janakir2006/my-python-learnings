@@ -15,19 +15,19 @@ income,age,kids = map(int,input("income,age,kids: ").split())
 if age>65 and kids==0:
      if income<=10000:
          print((5/100)*income)-500)
-     elif 10001<income<=50000:
+     elif 10001<=income<=50000:
          print((10/100)*income)-500)
-     elif 50001<income<=100000:
+     elif 50001<=income<=100000:
          print((20/100)*income)-500)
      else:
          print((30/100)*income)-500)
 
 if kids>0:
-    if income<=10001:
+    if income<=10000:
          print((5/100)*income)-(200*kids))
-    elif 10001<income<=50000:
+    elif 10001<=income<=50000:
          print((10/100)*income)-(200*kids))
-    elif 50000<income<=100000:
+    elif 50001<=income<=100000:
          print((20/100)*income)-(200*kids))
     else:
          print((30/100)*income)-(200*kids))
